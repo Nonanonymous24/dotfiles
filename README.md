@@ -59,4 +59,8 @@ Copy the `rofi` directory to `~/.config`.
 
 Copy the `kitty` directory to `~/.config`.
 
+## bat configuration
 
+Copy the bat directory to `~/.config`.
+
+Run `bat cache --build` to rebuild bat's cache.
