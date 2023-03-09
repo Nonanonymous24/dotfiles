@@ -55,4 +55,8 @@ Run `:PlugInstall` from inside nvim.
 
 Copy the `rofi` directory to `~/.config`.
 
+## kitty configuration
+
+Copy the `kitty` directory to `~/.config`.
+
 
