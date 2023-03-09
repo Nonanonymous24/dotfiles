@@ -40,7 +40,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ## neovim configuration
 
-Copy `init.vim` file to `~/.config/nvim/init.vim`
+Copy `init.vim` file to `~/.config/nvim/init.vim`.
 
 Install Vim-plug package manager:
 
@@ -50,5 +50,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 
 Run `:PlugInstall` from inside nvim.
+
+## rofi configuration
+
+Copy the `rofi` directory to `~/.config`.
 
 
