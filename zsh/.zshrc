@@ -10,6 +10,10 @@ fi
 # syntax theme (catppuccin-mocha)
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
+# aliases
+alias ls='exa'
+alias cat='bat'
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
