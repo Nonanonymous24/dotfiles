@@ -64,3 +64,8 @@ Copy the `kitty` directory to `~/.config`.
 Copy the bat directory to `~/.config`.
 
 Run `bat cache --build` to rebuild bat's cache.
+
+## dunst configuration
+
+Copy the `dunst` directory to `~/.config`.
+
