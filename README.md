@@ -69,3 +69,6 @@ Run `bat cache --build` to rebuild bat's cache.
 
 Copy the `dunst` directory to `~/.config`.
 
+## To Do
+
+-[] add polybar backlight module
