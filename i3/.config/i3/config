@@ -154,7 +154,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -f 'pango:JetBrains Mono 11' -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -188,7 +188,6 @@ for_window [class="^.*"] border pixel 2
 
 ## Gaps script
 
-### Start
 # Set inner/outer gaps
 gaps inner 5
 gaps outer 5
@@ -243,8 +242,6 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-### End
-
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -287,6 +284,7 @@ client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
 
+
 # set screen resolution
 exec_always xrandr --output VGA-1 --mode 1920x1080
 
@@ -302,3 +300,10 @@ exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# xautolock
+# exec_always --no-startup-id xautolock -time 10 -locker "systemctl suspend"
+# exec_always --no-startup-id xautolock -enable
+
+# betterlockscreen
+exec_always --no-startup-id betterlockscreen -u ~/Pictures/evening-sky.png
+bindsym $mod+shift+x exec betterlockscreen --time-format "%I:%M %P" -l dim
