@@ -18,8 +18,6 @@ Plug 'Yggdroot/indentLine'
 " vim-css-color
 Plug 'ap/vim-css-color'
 
-" Devicons
-Plug 'ryanoasis/vim-devicons'
 
 " Markdown
 Plug 'tpope/vim-markdown'
@@ -32,6 +30,12 @@ Plug 'mboughaba/i3config.vim'
 
 " vim-commentary
 Plug 'tpope/vim-commentary'
+
+" nerdtree
+Plug 'preservim/nerdtree'|
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'|
+            \ Plug 'ryanoasis/vim-devicons'
+
 
 call plug#end()
 " You can revert the settings after the call like so:
@@ -49,6 +53,7 @@ set smartcase
 set noswapfile
 set incsearch
 set mouse=a
+set shell=sh
 
 colorscheme catppuccin-mocha
 
@@ -247,4 +252,15 @@ augroup remember_folds
   autocmd BufWinLeave * mkview
   autocmd BufWinEnter * silent! loadview
 augroup END
+
+" Ctrl+t to toggle nerdtree to current working directory and Ctrl+r to toggle
+" nerdtree to directory of current buffer
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-r> :NERDTreeToggle %<CR>
+
+" nerdtree git plugin
+let g:NERDTreeGitStatusUseNerdFonts = 1
+let g:NERDTreeGitStatusShowIgnored = 1
+let g:NERDTreeGitStatusUntrackedFilesMode = 'all'
+" let g:NERDTreeGitStatusShowClean = 1
 
