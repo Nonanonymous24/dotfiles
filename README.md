@@ -1,8 +1,10 @@
 # dotfiles
 
-Follow the instructios below for setting up individual applications. Run all commands from the home directory.
+Follow the instructions below for setting up individual applications. Run all commands from the home directory.
 
-Folders are made for each app/package separately.
+Folders are made for each app/package separately and follow the GNU Stow directory structure.
+
+To create symlinks using stow, first clone the repo to home directory. Then run `stow <folder-name>` from inside the repository. In some cases where config might already be present for an application, run `stow --adopt <folder-name>` (*read up on `--adopt` flag before using).
 
 ## zsh configuration
 
@@ -11,8 +13,6 @@ If zsh is not installed run `sudo pacman -S zsh`.
 To change default shell, use `chsh -s $(which zsh)`.
 
 Check if shell is changed using `echo $SHELL`.
-
-Copy `.zshrc` and `.zsh` folder to home directory.
 
 Install ohmyzsh with the below command:
 
@@ -40,8 +40,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ## neovim configuration
 
-Copy `init.vim` file to `~/.config/nvim/init.vim`.
-
 Install Vim-plug package manager:
 
 ```
@@ -51,23 +49,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 Run `:PlugInstall` from inside nvim.
 
-## rofi configuration
-
-Copy the `rofi` directory to `~/.config`.
-
-## kitty configuration
-
-Copy the `kitty` directory to `~/.config`.
-
 ## bat configuration
 
-Copy the bat directory to `~/.config`.
-
 Run `bat cache --build` to rebuild bat's cache.
-
-## dunst configuration
-
-Copy the `dunst` directory to `~/.config`.
 
 ## To Do
 

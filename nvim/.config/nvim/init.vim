@@ -37,6 +37,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 
+" vim-gitgutter
+Plug 'airblade/vim-gitgutter'
+
 call plug#end()
 " You can revert the settings after the call like so:
 "   filetype indent off   " Disable file-type-specific indentation
@@ -253,10 +256,8 @@ augroup remember_folds
   autocmd BufWinEnter * silent! loadview
 augroup END
 
-" Ctrl+t to toggle nerdtree to current working directory and Ctrl+r to toggle
-" nerdtree to directory of current buffer
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-r> :NERDTreeToggle %<CR>
+" Ctrl+t to toggle nerdtree
+nnoremap <C-t> :NERDTreeToggle %<CR>
 
 " nerdtree git plugin
 let g:NERDTreeGitStatusUseNerdFonts = 1
@@ -264,3 +265,12 @@ let g:NERDTreeGitStatusShowIgnored = 1
 let g:NERDTreeGitStatusUntrackedFilesMode = 'all'
 " let g:NERDTreeGitStatusShowClean = 1
 
+" vim-gitgutter
+
+" sign colors
+highlight GitGutterAdd    guifg=#a6e3a1 ctermfg=2
+highlight GitGutterChange guifg=#f9e2af ctermfg=3
+highlight GitGutterDelete guifg=#f38ba8 ctermfg=1
+
+" Ctrl+g to toggle line highlights
+nnoremap <C-g> :GitGutterLineHighlightsToggle <CR>
