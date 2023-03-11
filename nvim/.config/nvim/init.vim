@@ -32,10 +32,10 @@ Plug 'mboughaba/i3config.vim'
 Plug 'tpope/vim-commentary'
 
 " nerdtree
-Plug 'preservim/nerdtree'|
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'|
-            \ Plug 'ryanoasis/vim-devicons'
-
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'PhilRunninger/nerdtree-visual-selection'
 
 call plug#end()
 " You can revert the settings after the call like so:
@@ -69,7 +69,7 @@ let g:airline_theme = 'catppuccin'
 " devicons break statusline
 let g:webdevicons_enable_airline_statusline = 0
 
-" coc.nvim config (copied from example config in source)i
+" coc.nvim config (copied from example config in source)
 
 """ Start
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
