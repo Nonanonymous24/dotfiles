@@ -299,4 +299,6 @@ exec_always feh --bg-fill ~/Pictures/evening-sky.png
 # dunst notification daemon
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
