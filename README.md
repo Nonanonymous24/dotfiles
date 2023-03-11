@@ -72,3 +72,9 @@ Copy the `dunst` directory to `~/.config`.
 ## To Do
 
 -[] add polybar backlight module
+-[] add polybar bluetooth module
+-[] add polybar usb module
+
+-[] fix cannot change brightness with xrandr in lock.sh
+
+-[] optimize config for multiple monitors
