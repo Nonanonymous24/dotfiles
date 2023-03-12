@@ -308,4 +308,7 @@ exec_always --no-startup-id betterlockscreen -u ~/Pictures/evening-sky.png
 bindsym $mod+shift+x exec betterlockscreen --time-format "%I:%M %P" -l dim
 
 # start thunar in daemon mode (required for automounting removable drives; requires thunar-volman, gvfa and gvfs-mtp package)
-exec_always thunar --daemon
+exec_always --no-startup-id thunar --daemon
+
+# rclone daemon for Google Drive (requires configuration)
+exec_always --no-startup-id rclone mount --daemon GoogleDrive: ~/GoogleDrive/
