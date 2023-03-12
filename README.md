@@ -4,7 +4,7 @@ Follow the instructions below for setting up individual applications. Run all co
 
 Folders are made for each app/package separately and follow the GNU Stow directory structure.
 
-To create symlinks using stow, first clone the repo to home directory. Then run `stow <folder-name>` from inside the repository. In some cases where config might already be present for an application, run `stow --adopt <folder-name>` (*read up on `--adopt` flag before using).
+To create symlinks using stow, first clone the repo to home directory. Then run `stow <folder-name>` from inside the repository. In some cases where config might already be present for an application, run `stow --adopt <folder-name>` (read up on `--adopt` flag before using).
 
 ## zsh configuration
 
