@@ -1,4 +1,5 @@
-" Vim-plug plugin manager
+" Vim-plug plugin manager (automatically enables syntax and filetype specific
+" indentation)
 
 call plug#begin()
 
@@ -17,7 +18,6 @@ Plug 'Yggdroot/indentLine'
 
 " vim-css-color
 Plug 'ap/vim-css-color'
-
 
 " Markdown
 Plug 'tpope/vim-markdown'
@@ -39,6 +39,9 @@ Plug 'PhilRunninger/nerdtree-visual-selection'
 
 " vim-gitgutter
 Plug 'airblade/vim-gitgutter'
+
+" tagbar
+Plug 'preservim/tagbar'
 
 call plug#end()
 " You can revert the settings after the call like so:
@@ -274,3 +277,6 @@ highlight GitGutterDelete guifg=#f38ba8 ctermfg=1
 
 " Ctrl+g to toggle line highlights
 nnoremap <C-g> :GitGutterLineHighlightsToggle <CR>
+
+" F8 for tagbar
+nmap <F8> :TagbarToggle<CR>
