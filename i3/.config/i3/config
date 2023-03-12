@@ -306,3 +306,6 @@ exec_always --no-startup-id $HOME/.config/i3/lock.sh
 # betterlockscreen
 exec_always --no-startup-id betterlockscreen -u ~/Pictures/evening-sky.png
 bindsym $mod+shift+x exec betterlockscreen --time-format "%I:%M %P" -l dim
+
+# start thunar in daemon mode (required for automounting removable drives; requires thunar-volman, gvfa and gvfs-mtp package)
+exec_always thunar --daemon
