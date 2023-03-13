@@ -59,6 +59,8 @@ Run `bat cache --build` to rebuild bat's cache.
 - [ ] add polybar bluetooth module
 - [ ] add polybar usb module
 
+- [ ] fix cannot use volume and brightness keys on keyboard
+
 - [ ] fix cannot change brightness with xrandr in lock.sh
 
 - [ ] optimize config for multiple monitors
