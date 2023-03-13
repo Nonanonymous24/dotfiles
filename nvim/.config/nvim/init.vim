@@ -60,6 +60,7 @@ set noswapfile
 set incsearch
 set mouse=a
 set shell=sh
+set clipboard+=unnamedplus "requires xclip package
 
 colorscheme catppuccin-mocha
 
