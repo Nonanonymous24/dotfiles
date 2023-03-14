@@ -62,3 +62,5 @@ Run `bat cache --build` to rebuild bat's cache.
 - [ ] fix cannot change brightness with xrandr in lock.sh
 
 - [ ] optimize config for multiple monitors
+
+- [ ] optimize for laptop lid closing
