@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit
+
 install_bat () {
     # check if package is installed
     sudo pacman -S --needed bat
@@ -12,4 +14,19 @@ install_bat () {
     then
         mkdir ~/.config/bat/themes
     fi
+
+    # remove existing config files
+    if [ -f ~/.config/bat/config ]
+    then
+        rm ~/.config/bat/config
+    fi
+    
+    if [ -f ~/.config/bat/themes/Catppuccin-mocha.tmTheme ]
+    then
+        rm ~/.config/bat/themes/Catppuccin-mocha.tmTheme
+    fi
+
+    # stow
+    source ~/dotfiles/scripts/stow.sh
+    stow_package bat 
 }
