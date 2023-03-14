@@ -14,3 +14,4 @@ stow_package () {
     # run stow command
     stow $package
 }
+

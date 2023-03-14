@@ -25,8 +25,10 @@ install_bat () {
     then
         rm ~/.config/bat/themes/Catppuccin-mocha.tmTheme
     fi
-
-    # stow
-    source ~/dotfiles/scripts/stow.sh
-    stow_package bat 
 }
+
+# stow if run from this script
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    source ~/dotfiles/scripts/stow.sh
+    stow_package bat
+fi
