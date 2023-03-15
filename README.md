@@ -64,3 +64,5 @@ Run `bat cache --build` to rebuild bat's cache.
 - [ ] optimize config for multiple monitors
 
 - [ ] optimize for laptop lid closing
+
+- [ ] migrate nvim config to lua
