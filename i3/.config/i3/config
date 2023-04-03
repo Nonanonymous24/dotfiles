@@ -301,7 +301,7 @@ exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # xidlehook with betterlockscreen
-exec_always --no-startup-id $HOME/.config/i3/lock.sh
+# exec_always --no-startup-id $HOME/.config/i3/lock.sh
 
 # betterlockscreen
 exec_always --no-startup-id betterlockscreen -u ~/Pictures/evening-sky.png
@@ -311,4 +311,4 @@ bindsym $mod+shift+x exec betterlockscreen --time-format "%I:%M %P" -l dim
 exec_always --no-startup-id thunar --daemon
 
 # rclone daemon for Google Drive (requires configuration)
-exec_always --no-startup-id rclone mount --daemon GoogleDrive: ~/GoogleDrive/
+# exec_always --no-startup-id rclone mount --daemon GoogleDrive: ~/GoogleDrive/
