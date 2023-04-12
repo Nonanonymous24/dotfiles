@@ -7,11 +7,9 @@ config_zsh() {
 	# omz
 	sudo chsh -s /usr/bin/zsh
 
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" <<EOF 
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-  EOF
-	
-  # powerlevel10k
+	# powerlevel10k
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 	# plugins
@@ -32,10 +30,6 @@ config_zsh() {
 	# stow
 	cd ~/dotfiles
 	stow --verbose zsh
-
-  source ~/.zshrc <<EOF
-
-  EOF
 }
 
 if [ "${BASH_SOURCE[0]}" == "$0" ]; then

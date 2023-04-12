@@ -5,21 +5,6 @@ config_nvim() {
 	sudo pacman -S --needed lazygit ripgrep fd cmake cargo xclip python-pynvim ruby git curl
 	yay -S --needed neovim-nightly
 
-	which node
-	if [ $? -ne 0 ]; then
-		if [ ! -d ~/.nvm ]; then
-			curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-		fi
-    source ~/.bashrc <<EOF
-		nvm install 19.8.1
-    EOF
-	fi
-
-	which npm
-	if [ $? -ne 0 ]; then
-		sudo pacman -S --needed npm
-	fi
-
 	# create directory structure
 	if [ -d ~/.config/nvim ]; then
 		rm -rfv ~/.config/nvim
