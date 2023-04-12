@@ -7,7 +7,7 @@ config_nvim() {
 
 	which node
 	if [ $? -ne 0 ]; then
-		if [ ! -d "~/.nvm" ]; then
+		if [ ! -d ~/.nvm ]; then
 			curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 			source ~/.bashrc
 		fi
@@ -24,9 +24,17 @@ config_nvim() {
 		rm -rfv ~/.config/nvim
 	fi
 
-	rm -rfv ~/.local/share/nvim
-	rm -rfv ~/.local/state/nvim
-	rm -rfv ~/.cache/nvim
+	if [ -d ~/.local/share/nvim ]; then
+		rm -rfv ~/.local/share/nvim
+	fi
+
+	if [ -d ~/.local/state/nvim ]; then
+		rm -rfv ~/.local/state/nvim
+	fi
+
+	if [ -d ~/.cache/nvim ]; then
+		rm -rfv ~/.cache/nvim
+	fi
 
 	mkdir -pv ~/.config/nvim/lua/config
 	mkdir -v ~/.config/nvim/lua/plugins

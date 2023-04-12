@@ -5,7 +5,7 @@ config_dunst() {
 	sudo pacman -S --needed dunst
 
 	# create directory structure
-	if [ -d "~/.config/dunst" ]; then
+	if [ -d ~/.config/dunst ]; then
 		rm -rfv ~/.config/dunst
 	fi
 

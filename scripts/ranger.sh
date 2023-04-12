@@ -5,7 +5,7 @@ config_ranger() {
 	sudo pacman -S --needed ranger
 
 	# create directory structure
-	if [ -d "~/.config/ranger" ]; then
+	if [ -d ~/.config/ranger ]; then
 		rm -rfv ~/.config/ranger
 	fi
 

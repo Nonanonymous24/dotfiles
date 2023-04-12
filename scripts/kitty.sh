@@ -5,7 +5,7 @@ config_kitty() {
 	sudo pacman -S --needed kitty
 
 	# create directory structure
-	if [ -d "~/.config/kitty" ]; then
+	if [ -d ~/.config/kitty ]; then
 		rm -rfv ~/.config/kitty
 	fi
 

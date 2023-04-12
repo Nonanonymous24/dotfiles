@@ -5,7 +5,7 @@ config_gtk() {
 	yay -S catppuccin-gtk-theme-mocha papirus-folders-catppuccin-git
 
 	# create directory structure
-	if [ -d "~/.config/gtk-3.0" ]; then
+	if [ -d ~/.config/gtk-3.0 ]; then
 		rm -rfv ~/.config/gtk-3.0
 	fi
 

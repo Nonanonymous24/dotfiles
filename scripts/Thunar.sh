@@ -5,7 +5,7 @@ config_thunar() {
 	sudo pacman -S --needed thunar thunar-volman
 
 	# create directory structure
-	if [ -d "~/.config/Thunar" ]; then
+	if [ -d ~/.config/Thunar ]; then
 		rm -rfv ~/.config/Thunar
 	fi
 

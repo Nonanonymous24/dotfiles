@@ -18,11 +18,11 @@ config_zsh() {
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 	# create directory structure
-	if [ -d "~/.zsh" ]; then
+	if [ -d ~/.zsh ]; then
 		rm -rfv ~/.zsh
 	fi
 
-	if [ -f "~/.zshrc" ]; then
+	if [ -f ~/.zshrc ]; then
 		rm -v ~/.zshrc
 	fi
 

@@ -5,7 +5,7 @@ config_btop() {
 	sudo pacman -S --needed btop
 
 	# create directory structure
-	if [ -d "~/.config/btop" ]; then
+	if [ -d ~/.config/btop ]; then
 		rm -rfv ~/.config/btop
 	fi
 

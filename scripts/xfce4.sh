@@ -2,7 +2,7 @@
 
 config_xfce4() {
 	# create directory structure
-	if [ -d "~/.config/xfce4" ]; then
+	if [ -d ~/.config/xfce4 ]; then
 		rm -rfv ~/.config/xfce4
 	fi
 

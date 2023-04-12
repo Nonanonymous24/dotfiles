@@ -5,7 +5,7 @@ config_polybar() {
 	sudo pacman -S --needed polybar
 
 	# create directory structure
-	if [ -d "~/.config/polybar" ]; then
+	if [ -d ~/.config/polybar ]; then
 		rm -rfv ~/.config/polybar
 	fi
 

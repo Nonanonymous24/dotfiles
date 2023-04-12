@@ -5,7 +5,7 @@ config_rofi() {
 	sudo pacman -S --needed rofi
 
 	# create directory structure
-	if [ -d "~/.config/rofi" ]; then
+	if [ -d ~/.config/rofi ]; then
 		rm -rfv ~/.config/rofi
 	fi
 

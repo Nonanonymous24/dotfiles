@@ -5,7 +5,7 @@ config_bat() {
 	sudo pacman -S --needed bat
 
 	# create directory structure
-	if [ -d "~/.config/bat" ]; then
+	if [ -d ~/.config/bat ]; then
 		rm -rfv ~/.config/bat
 	fi
 

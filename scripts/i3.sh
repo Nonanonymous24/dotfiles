@@ -6,14 +6,14 @@ config_i3() {
 	yay -S betterlockscreen xidlehook
 
 	# create directory structure
-	if [ -d "~/.config/i3" ]; then
+	if [ -d ~/.config/i3 ]; then
 		rm -rfv ~/.config/i3
 	fi
 
 	mkdir -v ~/.config/i3
 
 	# wallpaper
-	if [ ! -d "~/Pictures" ]; then
+	if [ ! -d ~/Pictures ]; then
 		mkdir ~/Pictures
 	fi
 
