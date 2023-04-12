@@ -9,7 +9,7 @@ config_thunar() {
 		rm -rfv ~/.config/Thunar
 	fi
 
-	mkdir v ~/.config/Thunar
+	mkdir -v ~/.config/Thunar
 
 	# stow
 	cd ~/dotfiles
