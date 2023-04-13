@@ -2,7 +2,7 @@
 
 config_ranger() {
 	# install packages
-	sudo pacman -S --needed ranger
+	sudo pacman -S --needed ranger python git
 
 	# create directory structure
 	if [ -d ~/.config/ranger ]; then

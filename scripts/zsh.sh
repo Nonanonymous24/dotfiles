@@ -2,7 +2,7 @@
 
 config_zsh() {
 	# install packages
-	sudo pacman -S curl zsh
+	sudo pacman -S curl zsh exa bat
 
 	# omz
 	sudo chsh -s /usr/bin/zsh
