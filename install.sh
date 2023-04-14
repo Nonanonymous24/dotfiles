@@ -1,5 +1,8 @@
 #!/bin/bash
 
+trap "exit" INT
+set -e
+
 # source scripts
 for file in source ~/dotfiles/scripts/*; do
 	source $file
