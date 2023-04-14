@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # source scripts
-source ~/dotfiles/scripts/*
+for file in source ~/dotfiles/scripts/*; do
+	source $file
+done
 
 install_fonts
 config_i3

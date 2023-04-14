@@ -2,7 +2,7 @@
 
 config_i3() {
 	# install packages
-	sudo pacman -S --needed i3-wm xrandr picom feh
+	sudo pacman -S --needed i3-wm picom feh
 	yay -S betterlockscreen xidlehook
 
 	# create directory structure
