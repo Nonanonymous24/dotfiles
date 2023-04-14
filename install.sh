@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# source scripts
+source ~/dotfiles/scripts/*
+
+install_fonts
+config_i3
+config_kitty
+config_polybar
+config_rofi
+config_bat
+config_btop
+config_dunst
+config_gtk
+config_ranger
+config_thunar
+config_xfce4
+config_nvim
+config_zsh
